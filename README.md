@@ -6,7 +6,7 @@ Implements a [Concourse CI](https://concourse-ci.org/) resource type to generate
 
 * `timezone`: *Optional.* The Timezone in which you want the date generated. Default is `UTC`.
 
-* `format`: *Optional.* The Format of the output Date Time version. Default is `20060102-150405`.
+* `format`: *Optional.* The Format of the output Date Time version, it uses the [Go Time Format](https://golang.org/src/time/format.go). Default is `20060102-150405`.
 
 ## Behavior
 
