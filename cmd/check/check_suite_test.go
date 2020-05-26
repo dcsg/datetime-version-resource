@@ -19,7 +19,7 @@ import (
 	"github.com/onsi/gomega/types"
 )
 
-func TestOut(t *testing.T) {
+func TestCheck(t *testing.T) {
 	RegisterFailHandler(Fail)
 	RunSpecs(t, "Check Suite")
 }

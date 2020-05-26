@@ -3,7 +3,6 @@ package main_test
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"path/filepath"
 
@@ -28,7 +27,7 @@ var _ = Describe("In", func() {
 		b, err := ioutil.ReadFile(filepath.Join(tmpDir, "version"))
 		Expect(err).NotTo(HaveOccurred())
 
-		fmt.Println(string(b))
+		Expect(version.Version).To(Equal(string(b)))
 	})
 
 	It("emits metadata", func() {
